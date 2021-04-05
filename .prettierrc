@@ -1,5 +1,4 @@
 {
   "semi": false,
-  "singleQuote": true,
-  "editor.formatOnSave": true
+  "singleQuote": true
 }

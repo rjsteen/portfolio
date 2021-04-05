@@ -1,79 +1,25 @@
 <template>
-  <section>
-    <v-navigation-drawer
-    
-    >
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Richard's Resume</span>
-        <span class="d-none d-lg-block">
-          <img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="/profile.jpg"
-            alt=""
-          />
-        </span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a
-              class="nav-link js-scroll-trigger"
-              @click="jumpTo('#about')"
-              href="#"
-              >About</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link js-scroll-trigger"
-              @click='Education'
-              href="#"
-              >Education</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link js-scroll-trigger"
-              @click='Experience'
-              href="#"
-              >Experience</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link js-scroll-trigger"
-              @click='Skills'
-              href="#"
-              >Skills</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link js-scroll-trigger"
-              @click='Interests'
-              href="#"
-              >Interests</a
-            >
-          </li>
-        </ul>
+  <v-row>
+    <v-col>
+      <v-card>
+        <v-navigation-drawer app>
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title class="title">
+                Richard's Resume
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-divider></v-divider>
+        </v-navigation-drawer>
+      </v-card>
+    </v-col>
+    <v-col>
+      <div class="resume">
+        <Resume />
       </div>
-    </v-navigation-drawer>
-
-    <div class="resume">
-      <Resume />
-    </div>
-  </section>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -96,16 +42,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-h1 {
-  font-size: 3rem;
-  line-height: 5.5rem;
-}
-@media (min-width: 992px) {
-  .resume {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
-}
-</style>
