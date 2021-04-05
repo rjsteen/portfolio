@@ -5,11 +5,17 @@
         <Presentation />
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <section
+        class="resume-section p-3 p-lg-5 d-flex flex-column"
+        id="education"
+      >
         <Education />
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <section
+        class="resume-section p-3 p-lg-5 d-flex flex-column"
+        id="experience"
+      >
         <Experience />
       </section>
 
@@ -17,40 +23,33 @@
         <Skills />
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <section
+        class="resume-section p-3 p-lg-5 d-flex flex-column"
+        id="interests"
+      >
         <Interests />
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-        <Projects />
       </section>
     </div>
   </section>
 </template>
 
 <script>
-import jump from "jump.js";
-import Logo from "../components/Logo.vue";
-import Presentation from "../components/Sections/Presentation";
-import Education from "../components/Sections/Education";
-import Experience from "../components/Sections/Experience";
-import Skills from "../components/Sections/Skills";
-import Interests from "../components/Sections/Interests";
-import Projects from "../components/Sections/Projects";
+import Presentation from '../components/Sections/Presentation'
+import Education from '../components/Sections/Education'
+import Experience from '../components/Sections/Experience'
+import Skills from '../components/Sections/Skills'
+import Interests from '../components/Sections/Interests'
 
 export default {
   components: {
-    Logo,
     Presentation,
     Experience,
     Education,
     Skills,
     Interests,
-    Projects
   },
-  methods: {}
-};
+  methods: {},
+}
 </script>
 
-<style>
-</style>
+<style></style>

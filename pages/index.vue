@@ -1,81 +1,75 @@
 <template>
   <section>
-    <v-row justify="center" align="center">
-      <v-col cols="12" sm="8" md="6">
-        <div class="text-center">
-          <logo />
-          <vuetify-logo />
-        </div>
-        <v-card>
-          <v-card-title class="headline">
-            Welcome to the Vuetify + Nuxt.js template
-          </v-card-title>
-          <v-card-text>
-            <p>
-              Vuetify is a progressive Material Design component framework for
-              Vue.js. It was designed to empower developers to create amazing
-              applications.
-            </p>
-            <p>
-              For more information on Vuetify, check out the
-              <a
-                href="https://vuetifyjs.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                documentation </a
-              >.
-            </p>
-            <p>
-              If you have questions, please join the official
-              <a
-                href="https://chat.vuetifyjs.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="chat"
-              >
-                discord </a
-              >.
-            </p>
-            <p>
-              Find a bug? Report it on the github
-              <a
-                href="https://github.com/vuetifyjs/vuetify/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="contribute"
-              >
-                issue board </a
-              >.
-            </p>
-            <p>Welcome folks!</p>
-            <div class="text-xs-right">
-              <em><small>&mdash; John Leider</small></em>
-            </div>
-            <hr class="my-3" />
+    <v-navigation-drawer
+    
+    >
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Richard's Resume</span>
+        <span class="d-none d-lg-block">
+          <img
+            class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="/profile.jpg"
+            alt=""
+          />
+        </span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
             <a
-              href="https://nuxtjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
+              class="nav-link js-scroll-trigger"
+              @click="jumpTo('#about')"
+              href="#"
+              >About</a
             >
-              Nuxt Documentation
-            </a>
-            <br />
+          </li>
+          <li class="nav-item">
             <a
-              href="https://github.com/nuxt/nuxt.js"
-              target="_blank"
-              rel="noopener noreferrer"
+              class="nav-link js-scroll-trigger"
+              @click='Education'
+              href="#"
+              >Education</a
             >
-              Nuxt GitHub
-            </a>
-          </v-card-text>
-          <v-card-actions>
-            <v-spacer />
-            <v-btn color="primary" nuxt to="/inspire"> Continue </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-    </v-row>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link js-scroll-trigger"
+              @click='Experience'
+              href="#"
+              >Experience</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link js-scroll-trigger"
+              @click='Skills'
+              href="#"
+              >Skills</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link js-scroll-trigger"
+              @click='Interests'
+              href="#"
+              >Interests</a
+            >
+          </li>
+        </ul>
+      </div>
+    </v-navigation-drawer>
+
     <div class="resume">
       <Resume />
     </div>
