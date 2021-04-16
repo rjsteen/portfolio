@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-row app>
-      <v-col>
+      <v-col md="2">
         <v-navigation-drawer permanent color="blue darken-2" class="rounded-0">
           <v-list class="justify-center">
             <div class="d-flex justify-center">

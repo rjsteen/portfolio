@@ -1,36 +1,23 @@
 <template>
-  <section id="page-top">
-    <div class="container-fluid p-0">
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <Presentation />
-      </section>
+  <v-container fluid id="page-top">
+    <v-card id="about">
+      <Presentation />
+    </v-card>
+    <v-card id="education">
+      <Education />
+    </v-card>
+    <v-card id="experience">
+      <Experience />
+    </v-card>
 
-      <section
-        class="resume-section p-3 p-lg-5 d-flex flex-column"
-        id="education"
-      >
-        <Education />
-      </section>
+    <v-card id="skills">
+      <Skills />
+    </v-card>
 
-      <section
-        class="resume-section p-3 p-lg-5 d-flex flex-column"
-        id="experience"
-      >
-        <Experience />
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <Skills />
-      </section>
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex flex-column"
-        id="interests"
-      >
-        <Interests />
-      </section>
-    </div>
-  </section>
+    <v-card id="interests">
+      <Interests />
+    </v-card>
+  </v-container>
 </template>
 
 <script>
