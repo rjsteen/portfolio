@@ -20,7 +20,10 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    { src: '~plugins/swiper.js', ssr: false },
+    { src: '~/plugins/vueTyper.js', ssr: false },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -45,8 +48,9 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
     theme: {
-      dark: true,
+      light: true,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -56,6 +60,12 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
+        },
+        light: {
+          primary: colors.blueGrey,
+          secondary: colors.grey.darken1,
+          accent: colors.shades.black,
+          error: colors.red.accent3,
         },
       },
     },

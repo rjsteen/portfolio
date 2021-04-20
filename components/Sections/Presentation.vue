@@ -1,11 +1,11 @@
 <template>
   <div class="my-auto">
-    <h1 class="mb-0">
+    <h1 class="text-h2">
       Richard
       <span class="text-primary">Steen</span>
     </h1>
 
-    <h3 class="mb-4">
+    <h3 class="h3">
       <vue-typer
         :text="['Software Engineer']"
         :repeat="Infinity"
@@ -23,19 +23,10 @@
 
     <div class="subheading mb-5">
       Austin · Texas ·
-      <a href="mailto:name@email.com">greatresolutions@gmail.com</a>
+      <a href="mailto:name@email.com">richardjsteen@gmail.com</a>
     </div>
-    <p class="mb-5">Software Engineer, Mountain Biker, Day Tripper</p>
+    <p class="h4">Software Engineer, Mountain Biker, Day Tripper</p>
     <ul class="list-inline list-social-icons mb-0">
-      <!-- <li class="list-inline-item">
-        <a href="#">
-          <span class="fa-stack fa-lg">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li> -->
-
       <li class="list-inline-item">
         <a target="blank" href="https://www.linkedin.com/in/richard-steen">
           <span class="fa-stack fa-lg">

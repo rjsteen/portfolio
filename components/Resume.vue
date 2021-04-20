@@ -1,22 +1,14 @@
 <template>
-  <v-container fluid id="page-top">
-    <v-card id="about">
-      <Presentation />
-    </v-card>
-    <v-card id="education">
-      <Education />
-    </v-card>
-    <v-card id="experience">
-      <Experience />
-    </v-card>
-
-    <v-card id="skills">
-      <Skills />
-    </v-card>
-
-    <v-card id="interests">
-      <Interests />
-    </v-card>
+  <v-container fill-height fluid>
+    <v-row align="center" justify="center" class="d-flex align-center">
+      <v-col cols="12" sm="6">
+        <Presentation />
+        <Education />
+        <Experience />
+        <Skills />
+        <Interests />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 

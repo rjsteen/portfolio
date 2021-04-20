@@ -1,29 +1,22 @@
 <template>
   <v-app>
-    <v-row app>
-      <v-col md="2">
-        <v-navigation-drawer permanent color="blue darken-2" class="rounded-0">
-          <v-list class="justify-center">
-            <div class="d-flex justify-center">
-              <v-avatar id="avatar" size="130">
-                <img src="profile.jpg" alt="avatar" />
-              </v-avatar>
-            </div>
+    <v-navigation-drawer app permanent color="indigo lighten-3" :width="325">
+      <v-layout mt-10 column align-center>
+        <v-avatar id="avatar" size="150">
+          <img src="profile.jpg" alt="avatar" />
+        </v-avatar>
+        <v-list dense nav>
+          <v-list-item>
+            <v-list-item-content>About</v-list-item-content>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-content>Education</v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-layout>
+    </v-navigation-drawer>
 
-            <v-list-item v-for="item in items" :key="item.title" link>
-              <v-list-item-content>
-                <v-list-item-title class="d-flex justify-center">{{
-                  item.title
-                }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-navigation-drawer>
-      </v-col>
-      <v-col>
-        <Resume />
-      </v-col>
-    </v-row>
+    <Resume />
   </v-app>
 </template>
 
