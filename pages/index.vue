@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer app permanent color="indigo lighten-3" :width="325">
+    <v-navigation-drawer app left color="#5e71c7" :width="325">
       <v-layout mt-10 column align-center>
         <v-avatar id="avatar" size="150">
           <img src="profile.jpg" alt="avatar" />
@@ -15,6 +15,9 @@
         </v-list>
       </v-layout>
     </v-navigation-drawer>
+    <v-toolbar dense color="#5e71c7" class="hidden-lg-and-up">
+      <v-app-bar-nav-icon> </v-app-bar-nav-icon>
+    </v-toolbar>
 
     <Resume />
   </v-app>

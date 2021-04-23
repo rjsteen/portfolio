@@ -1,7 +1,5 @@
 body {
   font-family: 'Open Sans', serif;
-  padding-top: 54px;
-  color: var(--color-text-primary);
 }
 
 /* @media (min-width: 992px) {
@@ -162,7 +160,7 @@ a:active {
 :root {
   --color: #868e96;
   --color-primary: #478547;
-  --color-secondary: #3b833b;
+  --color-secondary: #5e71c7;
   --color-primary-hover: #276827;
   --color-text-primary: #343a40;
   --color-text-secondary: #e2e2e2;

@@ -1,13 +1,13 @@
 <template>
   <div class="my-auto">
-    <h1 class="text-h2">
+    <h1 class="text-h3">
       Richard
       <span class="text-primary">Steen</span>
     </h1>
 
-    <h3 class="h3">
+    <h3 class="text-h6">
       <vue-typer
-        :text="['Software Engineer']"
+        :text="['Software Engineer', 'Mountain Biker', 'Day Tripper']"
         :repeat="Infinity"
         :shuffle="true"
         initial-action="typing"
@@ -22,13 +22,22 @@
     </h3>
 
     <div class="subheading mb-5">
-      Austin · Texas ·
+      Austin, TX ·
       <a href="mailto:name@email.com">richardjsteen@gmail.com</a>
     </div>
-    <p class="h4">Software Engineer, Mountain Biker, Day Tripper</p>
-    <ul class="list-inline list-social-icons mb-0">
+    <p>Love to learn, explore, and try new things</p>
+    <ul class="list-inline list-social-icons">
+      <!-- <li class="list-inline-item">
+        <a href="#">
+          <span class="fa-stack fa-lg">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+      </li> -->
+
       <li class="list-inline-item">
-        <a target="blank" href="https://www.linkedin.com/in/richard-steen">
+        <a target="blank">
           <span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
@@ -36,7 +45,7 @@
         </a>
       </li>
       <li class="list-inline-item">
-        <a target="blank" href="https://github.com/rjsteen">
+        <a target="blank">
           <span class="fa-stack fa-lg">
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
@@ -44,6 +53,7 @@
         </a>
       </li>
     </ul>
+    <v-divider></v-divider> <br /><br />
   </div>
 </template>
 
